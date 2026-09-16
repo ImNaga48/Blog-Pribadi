@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Website DragonStore",
+    "type": "website",
+    "description": "Project website yang dibuat untuk berjualan.",
+    "url": "https://dragonstore.biz.id"
+  },
+  {
+    "title": "Desain Grafis",
+    "type": "gambar",
+    "description": "Project desain grafis.",
+    "url": "assets/desain1.png"
+  },
+    {
+    "title": "Video Editing",
+    "type": "video",
+    "description": "Project video editing.",
+    "url": "assets/editing2.mp4"
+  }, 
+  {
+    "title": "Video Editing",
+    "type": "video",
+    "description": "Project video editing.",
+    "url": "assets/editing1.mp4"
+  }
+]
