@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dragon Store</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <div class="brand">
+
+      <img
+        src="assets/logo.jpg"
+        alt="Dragon Store"
+        class="brand-logo"
+      >
+
+      <div>
+        <div class="brand-name">
+          Dragon Store
+        </div>
+
+        <div class="brand-subtitle">
+          Premium digital services
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="nav-actions">
+
+      <!-- COIN BALANCE -->
+
+      <button
+        class="coin-pill"
+        id="openTopup"
+      >
+
+        <svg
+          class="icon coin-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="8"
+          ></circle>
+
+          <path
+            d="M9.5 9.5c.4-1 1.4-1.5 2.6-1.5
+               1.4 0 2.4.7 2.4 1.8
+               0 1.2-1.1 1.7-2.5 1.9
+               -1.3.2-2.5.7-2.5 1.9
+               0 1.1 1 1.9 2.5 1.9
+               1.2 0 2.2-.5 2.6-1.5"
+          ></path>
+
+          <path
+            d="M12 6.8v10.4"
+          ></path>
+
+        </svg>
+
+
+        <span id="coinBalance">
+          0
+        </span>
+
+        <span class="coin-label">
+          Koin
+        </span>
+
+        <span class="plus">
+          +
+        </span>
+
+      </button>
+
+
+      <!-- LOGIN -->
+
+      <button class="login-btn">
+        Login
+      </button>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="container">
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div>
+
+        <span class="eyebrow">
+          DRAGON STORE
+        </span>
+
+
+        <h1>
+          Premium,<br>
+          tanpa ribet.
+        </h1>
+
+
+        <p>
+          Gunakan koin untuk mengakses
+          berbagai produk premium dari
+          Dragon Studio.
+        </p>
+
+
+        <button
+          class="hero-btn"
+          id="heroTopup"
+        >
+          Top Up Koin
+        </button>
+
+      </div>
+
+
+      <!-- LOGO -->
+
+      <div class="hero-logo">
+
+        <img
+          src="assets/logo.jpg"
+          alt="Dragon Store"
+        >
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCT HEADER
+    ========================== -->
+
+    <section class="section-head">
+
+      <div>
+
+        <h2>
+          Produk Premium
+        </h2>
+
+        <p>
+          Pilih layanan yang ingin kamu gunakan.
+        </p>
+
+      </div>
+
+
+      <span class="product-count">
+        4 Produk
+      </span>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section class="products">
+
+
+      <!-- DRAGON MAGIC -->
+
+      <article class="product-card featured">
+
+        <div class="product-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M4 16c2.5-1.1 3.4-3.7 3.1-6.1
+                 -.2-1.6.7-3.2 2.3-3.8
+                 1.7-.7 3.5.1 4.3 1.6
+                 .5 1 1.4 1.6 2.5 1.8
+                 1.8.3 3.1 1.7 3.1 3.5
+                 0 2-1.6 3.5-3.7 3.5
+                 H10c-2.2 0-4.2-.2-6-.5Z"
+            ></path>
+
+            <path
+              d="M8.5 7.1 7 4.5"
+            ></path>
+
+            <path
+              d="M14.8 7.2 16 4.5"
+            ></path>
+
+          </svg>
+
+        </div>
+
+
+        <div class="product-content">
+
+          <div class="product-top">
+
+            <span class="tag">
+              POPULAR
+            </span>
+
+            <span class="price">
+              1 Koin
+            </span>
+
+          </div>
+
+
+          <h3>
+            Dragon Magic
+          </h3>
+
+
+          <p>
+            Aktivasi fitur premium
+            dengan proses otomatis.
+          </p>
+
+
+          <button
+            class="buy-btn"
+            data-product="Dragon Magic"
+            data-price="1"
+          >
+            Gunakan
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PREMIUM BOOST -->
+
+      <article class="product-card">
+
+        <div class="product-icon purple">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <path
+              d="m12 3 1.7 5.3L19 10
+                 l-5.3 1.7L12 17
+                 l-1.7-5.3L5 10
+                 l5.3-1.7L12 3Z"
+            ></path>
+
+            <path
+              d="m19 15 .7 2.3L22 18
+                 l-2.3.7L19 21
+                 l-.7-2.3L16 18
+                 l2.3-.7L19 15Z"
+            ></path>
+
+          </svg>
+
+        </div>
+
+
+        <div class="product-content">
+
+          <div class="product-top">
+
+            <span class="tag">
+              PREMIUM
+            </span>
+
+            <span class="price">
+              3 Koin
+            </span>
+
+          </div>
+
+
+          <h3>
+            Premium Boost
+          </h3>
+
+
+          <p>
+            Contoh produk premium lainnya
+            untuk etalase store.
+          </p>
+
+
+          <button
+            class="buy-btn"
+            data-product="Premium Boost"
+            data-price="3"
+          >
+            Gunakan
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- DRAGON EXPRESS -->
+
+      <article class="product-card">
+
+        <div class="product-icon blue">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <path
+              d="m13 2-8 12h6l-1 8
+                 8-12h-6l1-8Z"
+            ></path>
+
+          </svg>
+
+        </div>
+
+
+        <div class="product-content">
+
+          <div class="product-top">
+
+            <span class="tag">
+              NEW
+            </span>
+
+            <span class="price">
+              5 Koin
+            </span>
+
+          </div>
+
+
+          <h3>
+            Dragon Express
+          </h3>
+
+
+          <p>
+            Contoh layanan premium
+            dengan proses prioritas.
+          </p>
+
+
+          <button
+            class="buy-btn"
+            data-product="Dragon Express"
+            data-price="5"
+          >
+            Gunakan
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- COMING SOON -->
+
+      <article class="product-card muted-card">
+
+        <div class="product-icon gray">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M12 3v18"
+            ></path>
+
+            <path
+              d="M3 12h18"
+            ></path>
+
+            <path
+              d="M5.6 5.6l12.8 12.8"
+            ></path>
+
+            <path
+              d="M18.4 5.6 5.6 18.4"
+            ></path>
+
+          </svg>
+
+        </div>
+
+
+        <div class="product-content">
+
+          <div class="product-top">
+
+            <span class="tag">
+              SOON
+            </span>
+
+          </div>
+
+
+          <h3>
+            Coming Soon
+          </h3>
+
+
+          <p>
+            Produk premium baru akan
+            hadir di Dragon Store.
+          </p>
+
+
+          <button
+            class="buy-btn disabled"
+            disabled
+          >
+            Segera Hadir
+          </button>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+    <!-- =========================
+         INFO STRIP
+    ========================== -->
+
+    <section class="info-strip">
+
+
+      <!-- PRICE -->
+
+      <div>
+
+        <svg
+          class="info-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+
+          <circle
+            cx="12"
+            cy="12"
+            r="8"
+          ></circle>
+
+          <path
+            d="M9.5 9.5c.4-1 1.4-1.5 2.6-1.5
+               1.4 0 2.4.7 2.4 1.8
+               0 1.2-1.1 1.7-2.5 1.9
+               -1.3.2-2.5.7-2.5 1.9
+               0 1.1 1 1.9 2.5 1.9
+               1.2 0 2.2-.5 2.6-1.5"
+          ></path>
+
+          <path
+            d="M12 6.8v10.4"
+          ></path>
+
+        </svg>
+
+
+        <span>
+
+          <strong>
+            1 Koin = Rp1.000
+          </strong>
+
+          <small>
+            Harga transparan
+          </small>
+
+        </span>
+
+      </div>
+
+
+
+      <!-- FAST -->
+
+      <div>
+
+        <svg
+          class="info-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+
+          <path
+            d="m13 2-8 12h6l-1 8
+               8-12h-6l1-8Z"
+          ></path>
+
+        </svg>
+
+
+        <span>
+
+          <strong>
+            Proses otomatis
+          </strong>
+
+          <small>
+            Setelah pembayaran terkonfirmasi
+          </small>
+
+        </span>
+
+      </div>
+
+
+
+      <!-- SECURITY -->
+
+      <div>
+
+        <svg
+          class="info-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+
+          <rect
+            x="5"
+            y="10"
+            width="14"
+            height="10"
+            rx="2"
+          ></rect>
+
+          <path
+            d="M8 10V7a4 4 0 0 1 8 0v3"
+          ></path>
+
+        </svg>
+
+
+        <span>
+
+          <strong>
+            Aman & tercatat
+          </strong>
+
+          <small>
+            Riwayat transaksi tersimpan
+          </small>
+
+        </span>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       TOP UP MODAL
+  ========================== -->
+
+  <div
+    class="modal-backdrop"
+    id="topupModal"
+  >
+
+    <div class="modal">
+
+
+      <button
+        class="close-btn"
+        id="closeTopup"
+        aria-label="Tutup"
+      >
+        �
+      </button>
+
+
+      <span class="eyebrow">
+        WALLET
+      </span>
+
+
+      <h2>
+        Top Up Koin
+      </h2>
+
+
+      <p class="modal-desc">
+        1 Koin bernilai Rp1.000.
+        Pilih paket yang kamu inginkan.
+      </p>
+
+
+
+      <!-- CURRENT BALANCE -->
+
+      <div class="balance-box">
+
+        <span>
+          Saldo saat ini
+        </span>
+
+
+        <strong>
+
+          <svg
+            class="mini-coin"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+            ></circle>
+
+            <path
+              d="M9.5 9.5c.4-1 1.4-1.5 2.6-1.5
+                 1.4 0 2.4.7 2.4 1.8
+                 0 1.2-1.1 1.7-2.5 1.9
+                 -1.3.2-2.5.7-2.5 1.9
+                 0 1.1 1 1.9 2.5 1.9
+                 1.2 0 2.2-.5 2.6-1.5"
+            ></path>
+
+            <path
+              d="M12 6.8v10.4"
+            ></path>
+
+          </svg>
+
+
+          <span id="modalBalance">
+            0
+          </span>
+
+          Koin
+
+        </strong>
+
+      </div>
+
+
+
+      <!-- PACKAGES -->
+
+      <div class="packages">
+
+        <button
+          class="package active"
+          data-coins="1"
+        >
+          <strong>1</strong>
+          <span>Koin</span>
+          <small>Rp1.000</small>
+        </button>
+
+
+        <button
+          class="package"
+          data-coins="5"
+        >
+          <strong>5</strong>
+          <span>Koin</span>
+          <small>Rp5.000</small>
+        </button>
+
+
+        <button
+          class="package"
+          data-coins="10"
+        >
+          <strong>10</strong>
+          <span>Koin</span>
+          <small>Rp10.000</small>
+        </button>
+
+
+        <button
+          class="package"
+          data-coins="25"
+        >
+          <strong>25</strong>
+          <span>Koin</span>
+          <small>Rp25.000</small>
+        </button>
+
+
+        <button
+          class="package"
+          data-coins="50"
+        >
+          <strong>50</strong>
+          <span>Koin</span>
+          <small>Rp50.000</small>
+        </button>
+
+
+        <button
+          class="package"
+          data-coins="100"
+        >
+          <strong>100</strong>
+          <span>Koin</span>
+          <small>Rp100.000</small>
+        </button>
+
+      </div>
+
+
+
+      <!-- TOTAL -->
+
+      <div class="checkout-summary">
+
+        <span>
+          Total pembayaran
+        </span>
+
+        <strong id="topupTotal">
+          Rp1.000
+        </strong>
+
+      </div>
+
+
+
+      <!-- CHECKOUT -->
+
+      <button
+        class="checkout-btn"
+        id="checkoutBtn"
+      >
+        Lanjutkan Pembayaran
+      </button>
+
+
+      <p class="demo-note">
+        Mode demo: payment gateway belum disambungkan.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================
+       TOAST
+  ========================== -->
+
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+<section class="footer-info">
+  <div class="footer-info-inner">
+
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+
+<a href="terms.html" class="footer-link">
+  Syarat & Ketentuan
+</a>
+<a href="privacy.html" class="footer-link">
+  Kebijakan Privasi
+</a>
+      <a href="#" class="footer-link">Artikel & Panduan</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Person</h3>
+
+      <a
+        href="https://wa.me/628978115643"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-contact"
+      >
+        <svg viewBox="0 0 24 24" class="footer-icon">
+          <path d="M20 11.5a8.4 8.4 0 0 1-12.8 7.2L4 20l1.3-3.1A8.4 8.4 0 1 1 20 11.5Z"/>
+          <path d="M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.6.7c.7 1.1 1.6 2 2.8 2.7l.7-.6c.2-.2.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.3-1.1.4-1.7.3-1.5-.3-3.1-1.2-4.5-2.5-1.3-1.3-2.2-2.9-2.5-4.5-.1-.6 0-1.2.3-1.7Z"/>
+        </svg>
+
+        <span>
+          <small>WhatsApp</small>
+          08978115643
+        </span>
+      </a>
+
+      <a
+        href="mailto:dragonstore2026@gmail.com"
+        class="footer-contact"
+      >
+        <svg viewBox="0 0 24 24" class="footer-icon">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m4 7 8 6 8-6"/>
+        </svg>
+
+        <span>
+          <small>Email</small>
+          dragonstore2026@gmail.com
+        </span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+    ©2026 Dragon Studio
+  </footer>
+
+
+  <script src="index.js"></script>
+
+</body>
+</html>
